@@ -1,0 +1,17 @@
+name: Deployment Workflow
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  preparation:
+    run-on: ubuntu-latest
+    steps:
+      - name: preparation
+        run: echo "preparing the table ..."  
+
+      - name: checks out the repository
+        uses: actions/checkout@v4
+
+      - name        
