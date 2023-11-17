@@ -19,6 +19,13 @@ jobs:
         with:
             username: ${{ secrets.DOCKERHUB_USERNAME }}
             password: ${{ secrets.DOCKERHUB_PASSWORD }}  
+      - name: "Build our code"
+        env:
+          IMAGE NAME: simplepersonal101
+          VERSION: latest
+        run: |
+            docker build -t ${IMAGE_NAME}:${VERSION} .
+                   
 
         
 
