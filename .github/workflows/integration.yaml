@@ -1,8 +1,8 @@
-name: Integration
+name: Bad issues
 on:
-  push:
-    branches:
-      - master
+  issues:
+    types:
+      - opened
 
 jobs:
   preparation:
@@ -52,6 +52,8 @@ jobs:
           to: sadiboseun@yahoo.com
           from: sadiboseun@gmail.com
           body: Build job of ${{github.repository}} completed successfully!
+
+
 
         
   
