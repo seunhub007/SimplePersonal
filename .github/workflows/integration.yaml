@@ -38,7 +38,7 @@ jobs:
       #   run: |
       #     echo ${{ fromJson(steps.make_request.outputs.response).rates.USD }}
 
-      - name: Send mail
+      - name: Send mailer
         uses: dawidd6/action-send-mail@v3
         with:
           #  * smtp://user:password@server:port
