@@ -42,7 +42,7 @@ jobs:
         uses: dawidd6/action-send-mail@v3
         with:
           #  * smtp://user:password@server:port
-          connection_url: ${{secrets.MAIL_CONNECTION}}
+          # connection_url: ${{secrets.MAIL_CONNECTION}}
           server_address: smtp.gmail.com
           server_port: 465
           secure: true
